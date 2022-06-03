@@ -198,10 +198,11 @@ def scale_and_centre(img, size, margin=20, background=0):
     return cv2.resize(img, (size, size))
 
 
-def extract():
+def extract(st):
     # print("Enter image name: ")
     # image_url = input()
-    img = cv2.imread('sudoku_1.jpg')
+    print(st)
+    img = cv2.imread(st)
     processed_sudoku = processing(img)
     sudoku = find_corners(processed_sudoku)
     transformed = perspective_transform(img, sudoku)

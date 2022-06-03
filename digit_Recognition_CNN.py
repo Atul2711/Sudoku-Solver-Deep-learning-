@@ -10,8 +10,8 @@ import matplotlib.pyplot as plt
 from keras.utils import np_utils
 from matplotlib import pyplot
 from sklearn.model_selection import KFold
-from tensorflow.python.keras import Sequential
-from tensorflow.python.keras.optimizers import SGD
+from tensorflow.keras import Sequential
+from tensorflow.keras.optimizers import SGD
 
 def input_data():
 
